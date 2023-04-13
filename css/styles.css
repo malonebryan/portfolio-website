@@ -5,5 +5,29 @@ secondary color: #H3KV2N
 */
 body {
     font-family: 'Pacifico', cursive;
+    font-size: 16;
     background-color: skyblue;
 }
+h1, h2 {
+    line-height: 1.5;
+}
+h1 {
+    font-size: 2em;
+    font-weight: 300;
+}
+h2 {
+    font-size: 1.5em;
+    font-weight: 200;
+}
+img {
+    width: 100%;
+  }
+  a:active {
+    color: red;
+  }
+  a:visited {
+    color: purple;
+  }
+  a:hover {
+    color: green;
+  }
