@@ -3,6 +3,9 @@ Colors Used:
 primary color: #0F3LM2
 secondary color: #H3KV2N
 */
+* {
+    box-sizing: border-box;
+  }
 body {
     font-family: 'Pacifico', cursive;
     font-size: 16;
@@ -55,4 +58,56 @@ img {
     background-color: #ff7f50;
     color: #ffffff;
   }
-  
+  header {
+    background-color: #cc3b3b;
+    text-align: center;
+    padding: 10px 0;
+    margin: 10px;
+    border-bottom: 3px solid #4a4a4a;
+    position: relative;
+  }
+  /* Layout styling */
+  .container {
+    padding: 0 15px;
+  }
+  .row {
+    margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  }
+  #work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+  #hero h1 {
+    text-align: center; /* Centers text */
+    
+  }
+  .logo {
+    max-width: 250px;
+  }
+  nav > ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  nav > ul > li {
+    display: inline-block;
+  }
+  nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #4a4a4a;
+  }
+  #hero {
+    background-color: #cc3b3b;
+    padding: 20px 0;
+  }
+  .css-box-shadow{
+	/*start ------------*/
+	width: [object Object]px; 
+	height: [object Object]px; 
+	background: #F8F8F8; 
+	border: solid #BDBDBD 1px; 
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+	-webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+	-moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+}
+main {
+    padding-top: 133px;
+  }
