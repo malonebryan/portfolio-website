@@ -111,3 +111,10 @@ img {
 main {
     padding-top: 133px;
   }
+  footer {
+    text-align: center;
+  }
+  svg {
+    margin-top: 15px;
+    width: 45px;
+  }
