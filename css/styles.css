@@ -8,7 +8,7 @@ secondary color: #H3KV2N
   }
 body {
     font-family: 'Pacifico', cursive;
-    font-size: 16;
+    font-size: 18;
     background-color: skyblue;
 }
 h1, h2 {
@@ -24,6 +24,8 @@ h2 {
 }
 img {
     width: 100%;
+    max-width: 100%;
+    height: auto;
   }
   a:active {
     color: green;
@@ -39,10 +41,11 @@ img {
     background-color: #000cb9b6;
     color: #ffffff; /* needed to override the default link color */
     font-weight: 400;
+    text-decoration: none;
     padding: 10px;
     border-radius: 3px;
     border-bottom: 2px solid #0196f2; /* width of the border, type, color */
-    transition: 0.2s opacity;
+    transition-duration: 0.2s opacity;
   } 
   .button:hover {
     opacity: 0.8; /* Reduces the opacity of the button to 80% */
@@ -97,6 +100,7 @@ img {
   #hero {
     background-color: #cc3b3b;
     padding: 20px 0;
+    display: block;
   }
   .css-box-shadow{
 	/*start ------------*/
@@ -116,5 +120,64 @@ main {
   }
   svg {
     margin-top: 15px;
-    width: 45px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
   }
+  header {
+    text-align: unset;
+  }
+  @media only screen and (min-width: 640px) {
+    header {
+      text-align: unset;
+      padding: 20px 0 13px;
+    }
+  
+    nav {
+      width: auto;
+      float: right;
+      margin-top: 4px;
+    }
+  }
+  .col-md-6 {
+    width: 50%;
+}
+[class*="col-"] {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @keyframes color-change {
+    from {fill: #edc655;}
+    to {fill: #f76414;}
+  }
+  .sun {
+    animation: 4s color-change infinite alternate linear;
+  }
+  @keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+  }
+  .cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+  }
+  @keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
+  }
+  .cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+  }
+  
+  
+  
