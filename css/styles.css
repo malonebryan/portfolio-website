@@ -7,20 +7,28 @@ secondary color: #H3KV2N
     box-sizing: border-box;
   }
 body {
-    font-family: 'Pacifico', cursive;
+    font-family: 'Helvetica', cursive;
     font-size: 18;
-    background-color: skyblue;
+    background-color: rgb(255, 223, 178);
 }
 h1, h2 {
-    line-height: 1.5;
+  font-family: 'Pacifico', cursive;  
+  line-height: 1.5;
 }
 h1 {
-    font-size: 2em;
-    font-weight: 300;
+  font-family:'Pacifico', cursive;  
+  font-size: 4em;
+  font-weight: 400;
 }
 h2 {
-    font-size: 1.5em;
-    font-weight: 200;
+  font-family: 'Helvetica';  
+  font-size: 3em;
+    font-weight: 300;
+}
+h3 {
+  font-family: Helvetica;
+  font-size: 2em;
+  font-weight: 250;
 }
 img {
     width: 100%;
@@ -30,20 +38,20 @@ img {
     color: green;
   }
   a:visited {
-    color: purple;
+    color: navy (160, 2, 2, 0.98);
   }
   a:hover {
-    color: red;
+    color: red
   }
   .button {
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: #000cb9b6;
-    color: #ffffff; /* needed to override the default link color */
+    background-color: navy;
+    color: white; /* needed to override the default link color */
     font-weight: 400;
     text-decoration: none;
     padding: 10px;
     border-radius: 3px;
-    border-bottom: 2px solid #0196f2; /* width of the border, type, color */
+    border-bottom: 2px solid #000000; /* width of the border, type, color */
     transition-duration: 0.2s opacity;
   } 
   .button:hover {
@@ -52,25 +60,26 @@ img {
   }
   .button.contact {
     background-color: transparent;
-    color: #ff7f50;
+    color: navy;
     text-transform: uppercase;
-    border: 2px solid #ff7f50;
+    border: 2px solid black;
   }
   .button.contact:hover {
-    background-color: #ff7f50;
-    color: #ffffff;
+    background-color: navy;
+    color: white;
   }
   header {
-    background-color: #cc3b3b;
+    background-color: white;
     text-align: center;
     padding: 10px 0;
-    margin: 10px;
-    border-bottom: 3px solid #4a4a4a;
+    margin: 0px;
+    border-bottom: 3px solid black;
     position: relative;
   }
   /* Layout styling */
   .container {
     padding: 0 15px;
+    text-align: center;
   }
   .row {
     margin: 25px 0; /* 25px top and bottom, 0 left and right */
@@ -82,6 +91,7 @@ img {
   }
   .logo {
     max-width: 250px;
+    padding: 20px;
   }
   nav > ul {
     list-style-type: none;
@@ -97,7 +107,7 @@ img {
     color: #4a4a4a;
   }
   #hero {
-    background-color: #cc3b3b;
+    background-color: rgb(255, 223, 178);
     padding: 20px 0;
     display: block;
   }
@@ -126,6 +136,9 @@ main {
   header {
     text-align: unset;
   }
+  /* ==============================
+Medium devices (640px and larger)
+================================= */
   @media only screen and (min-width: 640px) {
     header {
       text-align: unset;
@@ -135,7 +148,8 @@ main {
     nav {
       width: auto;
       float: right;
-      margin-top: 4px;
+      margin-top: -160px;
+      padding: 100px;
     }
   }
   .col-md-6 {
@@ -156,6 +170,11 @@ main {
     margin-left: auto;
     margin-right: auto;
   }
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
   @keyframes color-change {
     from {fill: #edc655;}
     to {fill: #f76414;}
@@ -176,6 +195,18 @@ main {
   }
   .cloud-back {
     animation: 34s cloud-move-reverse infinite alternate linear;
+  }
+  #linkedin{
+    height: 50px;
+  }
+  #behance{
+    height: 50px;
+  }
+  #portrait{
+    height: 120px;
+  }
+  #about img{
+    height: 150px;
   }
   
   
