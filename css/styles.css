@@ -7,7 +7,7 @@ secondary color: #H3KV2N
     box-sizing: border-box;
   }
 body {
-    font-family: 'Helvetica', cursive;
+    font-family: 'Quicksand';
     font-size: 18;
     background-color: rgb(255, 223, 178);
 }
@@ -21,12 +21,12 @@ h1 {
   font-weight: 400;
 }
 h2 {
-  font-family: 'Helvetica';  
+  font-family: 'Quicksand';  
   font-size: 3em;
     font-weight: 300;
 }
 h3 {
-  font-family: Helvetica;
+  font-family: 'Quicksand';
   font-size: 2em;
   font-weight: 250;
 }
@@ -78,7 +78,7 @@ img {
   }
   /* Layout styling */
   .container {
-    padding: 0 15px;
+    padding: 0 auto;
     text-align: center;
   }
   .row {
@@ -102,7 +102,6 @@ img {
   }
   nav > ul > li > a {
     padding: 0 15px;
-    text-transform: uppercase;
     font-weight: 700;
     color: #4a4a4a;
   }
@@ -148,7 +147,7 @@ Medium devices (640px and larger)
     nav {
       width: auto;
       float: right;
-      margin-top: -160px;
+      margin-top: -200px;
       padding: 100px;
     }
   }
@@ -198,9 +197,12 @@ Large devices (1024px or larger)
   }
   #linkedin{
     height: 50px;
+    max-width: 1200px;
+
   }
   #behance{
     height: 50px;
+    max-width: 1200px;
   }
   #portrait{
     height: 120px;
@@ -208,6 +210,23 @@ Large devices (1024px or larger)
   #about img{
     height: 150px;
   }
-  
-  
+  a {
+  font-family:'Quicksand';  
+  font-size: 1.25em;
+  font-weight: 400;
+  }
+  p {
+    font-family:'Quicksand';  
+  font-size: 1.15em;
+  font-weight: 200;
+  }
+  .profile {
+    max-width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+  #contact{
+    text-align: left;
+    padding-left: 400px;
+  }
   
