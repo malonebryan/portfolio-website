@@ -6,21 +6,25 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <title>Home</title>
 </head>
 <body>
     <header>
         <div class="logo">
-        <img src="https://i.pinimg.com/originals/c6/65/dd/c665dd90922ac404225ac0764878e50d.png" alt="InitialsLogo">
+        <div class="navtoggle" id="myNavtoggle">
+        <img class="logo" src="https://i.pinimg.com/originals/c6/65/dd/c665dd90922ac404225ac0764878e50d.png" alt="InitialsLogo">
         </div>
         <nav>
             <ul class="container">
                 <li><a href="index.html">Work</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
             </ul>
         </nav>
+        </div>
     </header>
     <main>
         <div id="hero">
