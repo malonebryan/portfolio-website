@@ -74,6 +74,7 @@ img {
     margin: 0px;
     border-bottom: 3px solid black;
     position: relative;
+    width: 100%;
   
   }
   /* Layout styling */
@@ -230,10 +231,6 @@ Large devices (1024px or larger)
     display: block;
     margin: 0 auto;
   }
-  #contact{
-    text-align: left;
-    padding-left: 400px;
-  }
   .navtoggle li:not(:last-child) {
     display: none;
   }
@@ -258,7 +255,6 @@ Large devices (1024px or larger)
     padding: 10px 0;
     border-top: 1px solid rgba(255,127,80,0.5);
   }
-  
   .navtoggle.responsive li:last-child  {
     padding: 0 0 10px;
   }
