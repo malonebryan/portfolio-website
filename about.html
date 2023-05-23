@@ -7,23 +7,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <meta charset="UTF-8">
+ <script
+      src="https://kit.fontawesome.com/a3921eb820.js"
+      crossorigin="anonymous"
+    ></script>    <meta charset="UTF-8">
     <title>About Bryan</title>
 </head>
 <body>
-    <header>
+       <header>
+    <div class="container">
+            <div class="navtoggle" id="myNavtoggle">
         <div class="logo">
-            <img src="https://i.pinimg.com/originals/c6/65/dd/c665dd90922ac404225ac0764878e50d.png" alt="InitialsLogo">
-        </div>
+        <img src="https://i.pinimg.com/originals/c6/65/dd/c665dd90922ac404225ac0764878e50d.png" alt="InitialsLogo">
+        </div><!-- end logo-->
         <nav>
-            <ul class="navigation">
+            <ul>
                 <li><a href="index.html">Work</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
             </ul>
         </nav>
+        </div><!-- end nav toggle-->
+        </div><!-- end container-->
     </header>
     <main>
        <div id="about">
@@ -31,53 +37,51 @@
             <h1>Hello, nice to meet you!</h1>
         </div>
         </div>
-        <div>
+                <div class="container">
         <picture class="profile">
             <source srcset="img/portrait.jpg" media="(max-width: 767px)">
             <img src="img/portrait.jpg" alt="Profile Photo">
         </picture>
-        <div class="container">
                 <h1>My Story</h1>
                 <p>"My name is Bryan, and this is my story"</p>
                 <p>"It all started when......."</p>
                 <a href="files/CopyResume.pdf" class="button" target="_blank">My Resume</a>
             <div class="row">
-            <h1>Skills and Tools</h1>
+            <h1 id="skills">Skills and Tools</h1>
             <div class="col-md-6">
                 <h2>Relevant Skills</h2>
                 <ul>
-                    <ul>Wireframing</ul>
-                    <ul>Mockups</ul>
-                    <ul>User Flow</ul>
-                    <ul>Prototyping</ul>
-                    <ul>User Research</ul>
-                    <ul>Responsive Grids</ul>
-                    <ul>HTML, CSS, Java</ul>
+                    <li>Wireframing</li>
+                    <li>Mockups</li>
+                    <li>User Flow</li>
+                    <li>Prototyping</li>
+                    <li>User Research</li>
+                    <li>Responsive Grids</li>
+                    <li>HTML, CSS, Java</li>
                 </ul>
               </div>
               <div class="col-md-6">
                 <h2>Tools I Use</h2>
                 <ul>
-                    <ul>Figma</ul>
-                    <ul>Adobe XD</ul>
-                    <ul>Balsamiq</ul>
-                    <ul>Miro</ul>
-                    <ul>Affinity Photo</ul>
-                    <ul>Canva</ul>
-                    <ul>MS Office</ul>
-                    <ul>iOS</ul>
+                    <li>Figma</li>
+                    <li>Adobe XD</li>
+                    <li>Balsamiq</li>
+                    <li>Miro</li>
+                    <li>Affinity Photo</li>
+                    <li>Canva</li>
+                    <li>MS Office</li>
+                    <li>iOS</li>
                 </ul>
               </div> 
-            </div>
         </div>
        </div>
     </main>
-    <footer>
+    <footer id="contact">
         <div class="container">
             <h2>Get In Touch</h2>
             <p>Looking to get in touch? Contact me!</p>
             <div>
-                <a href="#" class="button">Send Email</a>
+                <a href="mailto:bryanmalone5@gmail.com" class="button">Send Email</a>
             </div>
             <div>
                 <a href="https://www.linkedin.com/in/bryan-malone" target="_blank">
